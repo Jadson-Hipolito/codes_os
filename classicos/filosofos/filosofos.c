@@ -84,7 +84,7 @@ void * filosofo(void * id)
     // convertendo o Id do filosofo para int
     long i = (long)id;
     
-    printf("\t> Filosofo %d pensando\n",i);
+    printf("\t> Filosofo %ld pensando\n",i);
     usleep(gera_rand(1000000));
 
     // ordem dos chopsticks depende do id  
@@ -110,7 +110,7 @@ void * filosofo(void * id)
     pegar(i, c1);
     pegar(i, c2);
     
-    printf("\t> Filosofo %d comendo\n",i);
+    printf("\t> Filosofo %ld comendo\n",i);
     usleep(gera_rand(1000000));
     
     //
